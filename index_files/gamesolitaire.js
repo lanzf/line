@@ -31,9 +31,9 @@ function showNextMove()
     {
       teams[0].highScore = teams[0].score;
       createCookie('hi', teams[0].highScore, 365);
-      showMessage("更多资源尽在HTML5中文网! <a href='http://www.html5china.com/html5games/line/'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您产生了新记录! <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
+      showMessage("<a href='../index.htm'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您产生了新记录! <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
     } else {
-      showMessage("更多资源尽在HTML5中文网! <a href='http://www.html5china.com/html5games/line/'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您的记录: <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
+      showMessage("<a href='../index.htm'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您的记录: <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
     }
     drawSolitaireScore();
   } else {

@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
-    <title>曲线谜团-Html5中文网</title>
+    <title>曲线谜团</title>
     <meta name="keywords" http-equiv="keywords" content="What a tangled web we weave.">
     <meta name="description" content="Get more tangled than your friends to win the game of Entanglement.">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -806,12 +806,12 @@ function browserCheck()
     return true;
   } else {
     var browserList = '';
-    browserList += '<li><a href="http://www.apple.com/safari/" title="Apple Safari" class="safari"><span>Apple Safari</span></a></li>';
-    browserList += '<li><a href="http://www.google.com/chrome/" title="Google Chrome" class="chrome"><span>Google Chrome</span></a></li>';
-    browserList += '<li><a href="http://www.mozilla.com/firefox/" title="Mozilla Firefox" class="firefox"><span>Mozilla Firefox</span></a></li>';
-    browserList += '<li><a href="http://www.opera.com/" title="Opera" class="opera"><span>Opera</span></a></li>';
+    browserList += '<li><a href="http://www.apple.com/safari/" title="Apple Safari" class="safari">Apple Safari</a></li>';
+    browserList += '<li><a href="http://www.google.com/chrome/" title="Google Chrome" class="chrome">Google Chrome</a></li>';
+    browserList += '<li><a href="http://www.mozilla.com/firefox/" title="Mozilla Firefox" class="firefox">Mozilla Firefox</a></li>';
+    browserList += '<li><a href="http://www.opera.com/" title="Opera" class="opera">Opera</a></li>';
 
-    showMessage('<p><b>Entanglement</b> uses cutting-edge browser technology, HTML5, which your browser does not seem to support. But you can still play! The most recent versions of all of these browsers support HTML5:</p><ul id="browsers">' + browserList + '</ul><p>You can also play using Internet Explorer, if you <a href="http://www.google.com/chromeframe/eula.html">install the Chrome Frame plug-in</a>.</p>', 400, 300, 'One More Step...', false, true);
+    showMessage('<p><b>温馨提示</b></br>该游戏使用的是HTML5技术哦，您当前的浏览器暂不支持该技术。</br>亲,以下的最新浏览器都支持HTML5哦:</p><ul id="browsers">' + browserList + '</ul><p>您也可以使用IE9以下版本，但请先<a href="http://www.google.com/chromeframe/eula.html">安装Chrome Frame plug-in</a>.</p>', 400, 300, '还差一点点哦...', false, true);
     return false;
   }
 }
@@ -1004,18 +1004,18 @@ function loadPage()
 
      </script>
     <script type="text/javascript" src="./index_files/gamesolitaire.js"></script>
-  </head><body class="solitaire" onload="loadPage();" onresize="gameBoard.rescale(); if(numberOfTeams == 1) drawSolitaireScore();">
-    <h1 id="title" style="display:none;background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; width: 250px; height: 40px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; background-position: initial initial; background-repeat: initial initial; ">HTML5中文网</h1>
+  </head>
+  <body class="solitaire" onload="loadPage();" onresize="gameBoard.rescale(); if(numberOfTeams == 1) drawSolitaireScore();">
+    <h1 id="title" style="display:none;background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; width: 250px; height: 40px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; background-position: initial initial; background-repeat: initial initial; ">HTML5中文网</h1>    
     <div id="scores" style="display: none; "><div style="color: orange;">3</div></div>
     <div id="msg" style="bottom: 20px; "><span style="color: orange;">您的记录: <span style="font-size: 1.4em;">5</span></span></div>
-
-    <canvas id="game" width="1440" height="740"></canvas>
+    <canvas id="game" width="1440" height="740" ></canvas>
     <canvas id="preview" width="226" height="261" style="width: 226.301px; height: 261px; left: 721px; top: 175.25px; "></canvas>
     <canvas id="queue" width="200" height="200"></canvas>
-    <div style="position: absolute; z-index: 93; right: 10px; bottom: 5px; font-weight: bold; font-size: 12px; font-family: candara, arial, sans-serif;"><a href="javascript:showMessage(INSTRUCTIONS, 400, 300, false, false, true);" style="font-weight: bold; color: #800;">玩法说明：</a> - <a href="http://www.html5china.com/" style="color: #aaa; text-decoration: none;">HTML5中文网</a></div>
-     <div style="position: absolute; z-index: 93; right: 250px; bottom: 5px; font-weight: bold; font-size: 14px; font-family: candara, arial, sans-serif;">
-    <a href="http://www.html5china.com">由HTML5中文网整理收集，更多精彩请关注 www.HTML5China.com </a>
-        <script src="http://s15.cnzz.com/stat.php?id=2297124&amp;web_id=2297124" language="JavaScript"></script></div>
+    <div style="position: absolute; z-index: 93; right: 10px; bottom: 5px; font-weight: bold; font-size: 12px; font-family: candara, arial, sans-serif;">
+    	<a href="javascript:showMessage(INSTRUCTIONS, 400, 300, false, false, true);" style="font-weight: bold; color: #800;">
+    		玩法说明</a> </div>
+
     <div id="message-box"></div>
     <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -1029,4 +1029,5 @@ pageTracker._trackPageview();
     </script>
   
 
-</body></html>
+</body>
+</html>
