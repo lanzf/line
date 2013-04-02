@@ -31,9 +31,9 @@ function showNextMove()
     {
       teams[0].highScore = teams[0].score;
       createCookie('hi', teams[0].highScore, 365);
-      showMessage("<a href='../index.htm'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您产生了新记录! <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
+      showMessage("<a href='javascript:beginGame()'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您产生了新记录! <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
     } else {
-      showMessage("<a href='../index.htm'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您的记录: <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
+      showMessage("<a href='javascript:beginGame()'>重新开始?</a><br />" + appendAd + "<br /><span style='color: " + teams[0].color + ";'>您的记录: <span style='font-size: 1.4em;'>" + teams[0].highScore + "</span></span>");
     }
     drawSolitaireScore();
   } else {
